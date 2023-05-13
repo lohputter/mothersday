@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+html {
+    text-align: center;
+    background-image: url("https://media.istockphoto.com/id/802636540/photo/wood-table-on-blur-cafe-with-light-background.jpg?s=612x612&w=0&k=20&c=E_2Le_5FDbHGAnTFyISGfhtwpNv-ZlF-1K0BrCiw9Ew=");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    color: #f2281d; 
+    font-family: 'Jost', sans-serif;
+}
+body {
+    position: relative;
+    width: 100%;
+}
+button {
+    margin: 20px;
+    font-family: 'Jost', sans-serif;
+    color: white;
+    padding: 20px;
+    background-color: #fa372d;
+    border-radius: 10px;
+    border-color: #f59995;
+    box-shadow: 2px 2px white;
+    transition: 0.1s linear;
+}
+button:hover {
+    font-weight: bold;
+    box-shadow: 4px 4px white;
+    text-shadow: 2px 2px 2px white;
+}
+.book {
+    display: none;
+    margin: 5%;
+}
+.page {
+    font-family: 'Noto Serif', serif;
+    text-align: left;
+    font-size: 0.5rem;
+    background-color: #c92b22;
+    box-shadow: 5px 5px white;
+    border-radius: 25px;
+    width: 45%;
+    color: white;
+    padding: 25px;
+    margin: 25px;
+    margin-top: 0;
+    height: auto;
+
+}
+.page h1 {
+    font-size: 25px;
+}
+.page > p {
+    font-size: 15px;
+    font-style: italic;
+    line-height: 1.5rem;
+    margin-right: 30px;
+}
+.page > img {
+    width: 45%;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px black;
+    float: right;
+    margin-right: 10px;
+}
+.page:nth-child(2) {
+    box-shadow: inset 5px 5px white;
+    display: flex;
+    flex-wrap: wrap;
+}
+#noflex {
+    display: inline-block;
+    text-align: center;
+}
+.page:nth-child(2) div {
+    width: 45%;
+    margin: auto;
+    padding: 5px;
+}
+.page:nth-child(2) div img {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+.page:nth-child(2) div p {
+    font-size: 15px;
+    text-align: center;
+}
+#nice {
+    display: none;
+    margin: 20px;
+}
+#last {
+    margin-left: 50px;
+}
+@media screen and (max-width: 700px) {
+    .page {
+        width: 90%;
+        margin: 25px;
+    }
+
+}
+.page button {
+    width: 90%;
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+}
+span {
+    display: none;
+    position: absolute;
+    top: 800px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px red;
+    animation: rise 2.5s linear infinite;
+}
+#subtitle {
+    transition: 1s ease-in-out;
+    color: white;
+    text-align: center;
+    margin: auto;
+    opacity: 0;
+    font-size: 55px;
+}
+#focus {
+    margin-top: 50px;
+    width: 25%;
+    border-radius: 35px;
+    border: 10px solid red;
+    display: none;
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+@keyframes rise {
+    0% {top: 800px}
+    100% {top: 0%}
+}
